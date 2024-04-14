@@ -1,0 +1,1 @@
+# ha-cosa-integration
