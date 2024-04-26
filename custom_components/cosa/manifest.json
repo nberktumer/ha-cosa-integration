@@ -1,0 +1,14 @@
+{
+  "domain": "cosa",
+  "name": "Cosa",
+  "codeowners": [
+    "@nberktumer"
+  ],
+  "requirements": ["pydantic"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/nberktumer/ha-cosa",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/nberktumer/ha-cosa/issues",
+  "version": "1.0.0"
+}

@@ -5,12 +5,12 @@ from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
-from .api import CosaApi
+from api import CosaApi
 
-from .const import DOMAIN
+from const import DOMAIN
 
 # For your initial PR, limit it to 1 platform.
-from .coordinator import CosaCoordinator
+from coordinator import CosaCoordinator
 
 PLATFORMS: list[Platform] = [Platform.CLIMATE, Platform.SENSOR, Platform.BINARY_SENSOR, Platform.NUMBER,
                              Platform.SELECT]

@@ -1,17 +1,16 @@
-import logging
 from typing import TypeVar, Optional
 
-from .models.auth import AuthRequest
-from .models.base import BaseRequest
-from .models.combi import SetCombiSettingsRequest
-from .models.device import SetDeviceSettingsRequest
-from .models.endpoint import GetEndpointRequest, \
+from models.auth import AuthRequest
+from models.base import BaseRequest
+from models.combi import SetCombiSettingsRequest
+from models.device import SetDeviceSettingsRequest
+from models.endpoint import GetEndpointRequest, \
     GetEndpointClientsRequest
-from .models.mode import Mode, SetModeRequest
-from .models.option import Option, SetOptionRequest
-from .models.place import GetPlaceRequest
-from .models.settings import CombiSettings
-from .models.temperature import TargetTemperatures, GetTargetTemperaturesRequest, \
+from models.mode import Mode, SetModeRequest
+from models.option import Option, SetOptionRequest
+from models.place import GetPlaceRequest
+from models.settings import CombiSettings
+from models.temperature import TargetTemperatures, GetTargetTemperaturesRequest, \
     SetTargetTemperaturesRequest
 from .exceptions import ApiAuthError, InvalidAuth, CannotConnect, ApiError
 

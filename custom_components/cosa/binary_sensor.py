@@ -10,7 +10,7 @@ from .const import DOMAIN
 from homeassistant.helpers.update_coordinator import (
     CoordinatorEntity
 )
-from .models.option import Option
+from models.option import Option
 
 
 @dataclass

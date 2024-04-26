@@ -1,9 +1,9 @@
-from .coordinator import CosaCoordinator
-from .models.option import Option
+from coordinator import CosaCoordinator
+from models.option import Option
 from homeassistant.components.select import SelectEntity, SelectEntityDescription
 from homeassistant.core import callback
 
-from .const import DOMAIN, MIN_TEMPERATURE
+from const import DOMAIN, MIN_TEMPERATURE
 from homeassistant.helpers.entity import EntityCategory
 from homeassistant.helpers.update_coordinator import (
     CoordinatorEntity
