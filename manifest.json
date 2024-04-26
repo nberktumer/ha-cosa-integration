@@ -1,0 +1,16 @@
+{
+  "domain": "cosa",
+  "name": "Cosa",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/cosa",
+  "requirements": ["pydantic"],
+  "ssdp": [],
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": [],
+  "codeowners": [
+    "@nberktumer"
+  ],
+  "iot_class": "cloud_polling",
+  "version": "1.0.0"
+}
