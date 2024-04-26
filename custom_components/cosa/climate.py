@@ -99,6 +99,13 @@ class CosaClimateEntity(CoordinatorEntity, ClimateEntity):
         await self.coordinator.cosa_api.set_option(endpoint["id"], Option(preset_mode))
         await self.coordinator.async_request_refresh()
 
+    async def async_turn_on(self):
+        endpoint = self.coordinator.data[self.idx]
+        await self.async_set_preset_mode(endpoint["previousOption"])
+
+    async def async_turn_off(self):
+        await self.async_set_preset_mode(Option.OFF)
+
     @callback
     def _handle_coordinator_update(self) -> None:
         self._update_attr(self.coordinator.data[self.idx])
