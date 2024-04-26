@@ -1,5 +1,5 @@
 from .coordinator import CosaCoordinator
-from models.option import Option
+from .models.option import Option
 from homeassistant.components.climate import ClimateEntity, HVACMode, ClimateEntityFeature, UnitOfTemperature
 from homeassistant.const import PRECISION_TENTHS
 from homeassistant.core import callback

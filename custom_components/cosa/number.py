@@ -1,13 +1,13 @@
 from dataclasses import dataclass
 from typing import Callable, Any
 
-from coordinator import CosaCoordinator
+from .coordinator import CosaCoordinator
 from homeassistant.components.number import NumberEntity, NumberEntityDescription, NumberDeviceClass, UnitOfTemperature
 from homeassistant.const import PRECISION_TENTHS
 from homeassistant.core import callback
 
-from const import DOMAIN
-from api import CosaApi
+from .const import DOMAIN
+from .api import CosaApi
 from homeassistant.helpers.update_coordinator import (
     CoordinatorEntity
 )

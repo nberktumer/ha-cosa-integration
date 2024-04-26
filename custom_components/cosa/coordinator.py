@@ -5,7 +5,7 @@ from datetime import timedelta
 from .const import DOMAIN
 from .api import CosaApi
 from .exceptions import ApiAuthError, ApiError
-from models.mode import Mode
+from .models.mode import Mode
 from homeassistant.core import HomeAssistant
 from homeassistant.exceptions import ConfigEntryAuthFailed
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed

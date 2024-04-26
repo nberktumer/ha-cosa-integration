@@ -3,7 +3,7 @@ from homeassistant.components.sensor import SensorEntity, SensorEntityDescriptio
 from homeassistant.const import PERCENTAGE
 from homeassistant.core import callback
 
-from const import DOMAIN
+from .const import DOMAIN
 from homeassistant.helpers.update_coordinator import (
     CoordinatorEntity
 )
