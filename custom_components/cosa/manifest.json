@@ -4,7 +4,7 @@
   "codeowners": [
     "@nberktumer"
   ],
-  "requirements": ["pydantic"],
+  "requirements": ["pydantic", "backoff"],
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/nberktumer/ha-cosa",

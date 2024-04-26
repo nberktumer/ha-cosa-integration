@@ -1,4 +1,4 @@
-from typing import TypeVar, Optional
+from typing import Optional
 
 from .models.auth import AuthRequest
 from .models.base import BaseRequest
@@ -13,10 +13,9 @@ from .models.settings import CombiSettings
 from .models.temperature import TargetTemperatures, GetTargetTemperaturesRequest, \
     SetTargetTemperaturesRequest
 from .exceptions import ApiAuthError, InvalidAuth, CannotConnect, ApiError
+import backoff
 
 from aiohttp import ClientSession
-
-T = TypeVar('T')
 
 
 class CosaApi:
@@ -119,6 +118,7 @@ class CosaApi:
         result = await self._cosa_request("api/endpoints/setDeviceSettings", dto=dto)
         return result.get("ok") == 1
 
+    @backoff.on_exception(backoff.expo, Exception, max_time=2, max_tries=3)
     async def _cosa_request(self, path: str, dto: BaseRequest = BaseRequest(), auth=True):
         headers = {
             "accept": "application/json, text/plain, */*",

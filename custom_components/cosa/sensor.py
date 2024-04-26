@@ -1,4 +1,4 @@
-from coordinator import CosaCoordinator
+from .coordinator import CosaCoordinator
 from homeassistant.components.sensor import SensorEntity, SensorEntityDescription, SensorDeviceClass, SensorStateClass, UnitOfTemperature
 from homeassistant.const import PERCENTAGE
 from homeassistant.core import callback
