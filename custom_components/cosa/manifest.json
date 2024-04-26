@@ -7,8 +7,8 @@
   "requirements": ["pydantic", "backoff"],
   "config_flow": true,
   "dependencies": [],
-  "documentation": "https://github.com/nberktumer/ha-cosa",
+  "documentation": "https://github.com/nberktumer/ha-cosa-integration",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/nberktumer/ha-cosa/issues",
+  "issue_tracker": "https://github.com/nberktumer/ha-cosa-integration/issues",
   "version": "1.0.0"
 }
