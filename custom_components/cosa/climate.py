@@ -34,7 +34,8 @@ class CosaClimateEntity(CoordinatorEntity, ClimateEntity):
         self._attr_min_temp = MIN_TEMPERATURE
         self._attr_max_temp = MAX_TEMPERATURE
         self._attr_temperature_unit = UnitOfTemperature.CELSIUS
-        self._attr_supported_features = (ClimateEntityFeature.TARGET_TEMPERATURE | ClimateEntityFeature.PRESET_MODE | ClimateEntityFeature.TURN_ON | ClimateEntityFeature.TURN_OFF)
+        self._attr_supported_features = ClimateEntityFeature.TARGET_TEMPERATURE | ClimateEntityFeature.PRESET_MODE | ClimateEntityFeature.TURN_ON | ClimateEntityFeature.TURN_OFF
+        self._enable_turn_on_off_backwards_compatibility = False
         self._attr_preset_modes = list(
             map(str.capitalize, [Option.HOME, Option.AWAY, Option.SLEEP, Option.CUSTOM, Option.OFF]))
         self._attr_hvac_modes = [HVACMode.HEAT, HVACMode.OFF]
