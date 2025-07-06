@@ -1,5 +1,6 @@
+from enum import StrEnum
+
 from .option import Option
-from homeassistant.backports.enum import StrEnum
 
 from .base import BaseRequest
 
